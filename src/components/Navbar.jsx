@@ -4,6 +4,7 @@ import styled from "styled-components";
 const Title = styled.h1`
   font-size: 30px;
   color: black;
+  font-weight: 900;
 
   @media only screen and (max-width: 768px) {
     text-align: center;
@@ -92,8 +93,7 @@ const Navbar = () => {
             AN.
           </Title>
           
-          <List>          
-             <ListItem as="a" href="#Hero">Home</ListItem>    
+          <List>              
              <ListItem as="a" href="#Who">About</ListItem>
              <ListItem as="a" href="#Skills">Skills</ListItem>
              <ListItem as="a" href="#Works">Projects</ListItem>

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import me from "../../public/img/me.png"
+import me from "../img/me.png"
 
 
 const Section = styled.div`

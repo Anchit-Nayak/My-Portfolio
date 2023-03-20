@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import Contact from "./components/Contact";
+import { Footer } from "./components/Footer";
 import Hero from "./components/Hero";
 import { Skills } from "./components/Skills";
 import { Splash } from "./components/Splash";
@@ -26,6 +27,7 @@ function App() {
       <Skills/>
       <Works />
       <Contact />
+      <Footer/>
     </Container>
   );
 }

@@ -136,7 +136,7 @@ I am a passionate and innovative DevOps Engineer and a Web Developer. I am alway
               <OrbitControls enableZoom={false} />
               <ambientLight intensity={1} />
               <directionalLight position={[3, 2, 1]} />
-              <Sphere args={[1, 100, 200]} scale={2.0}>
+              <Sphere args={[1, 100, 200]} scale={2.4}>
                 <MeshDistortMaterial
                   color="#161616"
                   attach="material"

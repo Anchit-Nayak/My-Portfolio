@@ -1,4 +1,4 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import ContactScreen from "./ContactScreen";
 
@@ -6,6 +6,13 @@ const Center = styled.div`
   display: flex;
   justify-content: center;
   allign-items: center;
+  
+`;
+
+const Cont = styled.div`
+  display: flex;
+  justify-content:center;
+  margin-top: 50px;
 `;
 
 const Section = styled.div`
@@ -26,7 +33,8 @@ const Container = styled.div`
   scroll-snap-align: center;
   width: 1400px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  justify-content: center;
 
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -58,20 +66,6 @@ const Title = styled.h1`
   }
 `;
 
-
-const Subtitle = styled.h2`
-  color: #da4ea2;
-`;
-
-const Desc = styled.p`
-  font-size: 24px;
-  color: lightgray;
-  @media only screen and (max-width: 768px) {
-    padding: 20px;
-    text-align: center;
-  }
-`;
-
 const Button = styled.button`
   background-color: #da4ea2;
   color: white;
@@ -97,9 +91,12 @@ const Contact = () => {
   return (
     <Section id="Contact">
       <Container>
-        <Center>
-        <ContactScreen/>
-        </Center>
+          <Cont>
+          <Title>Get In Touch</Title>
+          </Cont>
+          <Cont>
+          <ContactScreen/>
+          </Cont>
       </Container>
     </Section>
   );

@@ -37,9 +37,6 @@ flex-direction: row;
 justify-content: center;
 allign-items: center;
 color: black;
-&:hover{
-    box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.49);
-}
 `;
 const Icon = styled.div`
 display:flex;
