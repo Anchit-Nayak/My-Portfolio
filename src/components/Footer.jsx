@@ -71,7 +71,7 @@ const Footer = () => {
           </Title>
         </Links>
         <Icons>
-        <Para>Built and Deployed by <Bold as="a" href="href='https://github.com/Anchit-Nayak'">Anchit Nayak</Bold> .</Para>
+        <Para>Built and Deployed by <Bold as="a" href="href='https://github.com/Anchit-Nayak'">Anchit Nayak</Bold></Para>
         </Icons>
       </Container>
     </Section>

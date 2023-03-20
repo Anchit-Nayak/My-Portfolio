@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components';
-import me from '../img/me.png'
+import me from '../../public/img/me.png'
 
 const Cards = styled.div`
   margin-top: 100px; 
