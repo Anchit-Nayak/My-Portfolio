@@ -1,9 +1,8 @@
 import React from 'react'
-import myPic from '../../public/img/bg.jpeg';
 
 export const Projects = () => {
   var list = [
-    {'image': {myPic}, 'title': "Hello" , 'desc' : "My name is Anchit"},
+    {'image': '', 'title': "Hello" , 'desc' : "My name is Anchit"},
 
 
   ]
