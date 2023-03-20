@@ -2,9 +2,12 @@ import React from 'react'
 import styled from 'styled-components';
 
 const Container = styled.div`
-  height: 700px;
-  widht: 1400px;
-  background-color: black;
+  width: 100%;
+  max-width: 1020px;
+  height: 550px;
+  background-color: #161616;
+  overflow:hidden;
+  border-radius: 10px;
 `;
 const Text = styled.h2`
   color: white;
@@ -13,9 +16,9 @@ const Text = styled.h2`
 const ContactScreen = () => {
 
   return <Container>
-     <Text>
-        Contact Me
-     </Text>
+     <form>
+
+     </form>
   </Container>
 }
 

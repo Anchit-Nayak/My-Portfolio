@@ -1,9 +1,14 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from "styled-components";
 import { Projects } from "./Projects";
 
+const Cont = styled.div`
+  display: flex;
+  justify-content:center;
+`;
+
 const Section = styled.div`
-margin-top: 100px;
+  margin-top: 200px; 
   height: 100vh;
   scroll-snap-align: center;
   display: flex;
@@ -15,12 +20,22 @@ margin-top: 100px;
     height: 200vh;
   }
 `;
+
+const Center = styled.div`
+  display: flex;
+  allign-items: center;
+  flex-direction: column; 
+`;
+
+
 const Container = styled.div`
   height: 100%;
   scroll-snap-align: center;
   width: 1400px;
   display: flex;
-  justify-content:center;
+  justify-content: center;
+  allign-items: center;
+  flex-direction: column; 
 
   @media only screen and (max-width: 768px) {
     width: 100%;
@@ -46,23 +61,12 @@ const Left = styled.div`
 const Title = styled.h1`
   font-size: 74px;
   color: #161616;
+  text-allign: center;
 
   @media only screen and (max-width: 768px) {
     font-size: 60px;
   }
 `;
-
-const Button = styled.button`
-  background-color: #da4ea2;
-  color: white;
-  font-weight: 500;
-  width: 100px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-`;
-
 const Right = styled.div`
   flex: 3;
   position: relative;
@@ -71,45 +75,19 @@ const Right = styled.div`
     width: 100%;
   }
 `;
-const List = styled.ul`
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-`;
 
-const ListItem = styled.li`
-  font-size: 90px;
-  font-weight: bold;
-  cursor: pointer;
-  color: transparent;
-  -webkit-text-stroke: 1px white;
-  position: relative;
-
-  @media only screen and (max-width: 768px) {
-    font-size: 24px;
-    color: white;
-    -webkit-text-stroke: 0px;
-  }
-
-  ::after {
-    content: "${(props) => props.text}";
-    position: absolute;
-    top: 0;
-    left: 0;
-    color: pink;
-    width: 0px;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-  `
 
 const Works = () => {
   return (
-    <Section>
+    <Section id="Works">
       <Container>
-        
+          <Cont>
           <Title>My Projects</Title>
+          </Cont>
+          <Cont>
+          <Projects/>
+          </Cont>
+          
           
       </Container>
     </Section>
