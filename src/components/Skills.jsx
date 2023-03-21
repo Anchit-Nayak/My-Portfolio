@@ -5,8 +5,8 @@ import { SkillCard } from "./SkillCard";
 
 
 const Section = styled.div`
-  margin-top: 200px;
-  height: 100vh;
+  margin-top: 100px;
+  height: 90vh;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
@@ -80,7 +80,7 @@ const Desc = styled.p`
 
 export const Skills = () => {
   return (
-    <Section>
+    <Section id="Skills">
         <Container>
           
             <Title>Skills & Interests</Title>

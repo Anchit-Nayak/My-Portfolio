@@ -8,8 +8,8 @@ const Cont = styled.div`
 `;
 
 const Section = styled.div`
-  margin-top: 200px; 
-  height: 100vh;
+  margin-top: 60px; 
+  height: 70vh;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;

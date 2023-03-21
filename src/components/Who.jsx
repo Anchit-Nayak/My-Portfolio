@@ -67,7 +67,7 @@ const Img = styled.img`
   height: 600px;
   object-fit: contain;
   margin-top: 150px;
-  margin-right: 30px;
+  margin-left: 50px;
 
 `;
 

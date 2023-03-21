@@ -16,7 +16,7 @@ const Cont = styled.div`
 `;
 
 const Section = styled.div`
-  height: 100vh;
+  height: 110vh;
   scroll-snap-align: center;
   display: flex;
   flex-direction: column;
@@ -30,6 +30,8 @@ const Section = styled.div`
 
 const Container = styled.div`
   height: 100%;
+  margin-top: 120px;
+  padding-top: 150px;
   scroll-snap-align: center;
   width: 1400px;
   display: flex;
@@ -92,7 +94,7 @@ const Contact = () => {
     <Section id="Contact">
       <Container>
           <Cont>
-          <Title>Get In Touch</Title>
+          <Title>Let's Get In Touch</Title>
           </Cont>
           <Cont>
           <ContactScreen/>

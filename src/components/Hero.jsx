@@ -112,18 +112,16 @@ const Hero = () => {
       <Container>
         <Left>
           <Title>Hi There,</Title>
-          <Title>I am Anchit</Title>
+          <Title>I am Anchit Nayak</Title>
           <WhatWeDo>
             <Subtitle>DevOps Enthusiast</Subtitle>
           </WhatWeDo>
-          <Desc>
-I am a passionate and innovative DevOps Engineer and a Web Developer. I am always searching for the latest tools and methodologies. My mission is to make bad processes better through automation, testing, and education. 
-          </Desc>
+          
           <div>
             <A href="https://github.com/Anchit-Nayak">
           <FaGithub size={30}/>
           </A >
-          <A href="https://www.linkedin.com/in/anchit-nayak-4944a522a/">
+          <A href="https://www.linkedin.com/in/anchit-nayak/">
             
           <FaLinkedin size={30}/>
         
