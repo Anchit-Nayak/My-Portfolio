@@ -5,6 +5,9 @@ import { Projects } from "./Projects";
 const Cont = styled.div`
   display: flex;
   justify-content:center;
+  @media only screen and (max-width: 768px) {
+    align-items: center;
+  }
 `;
 
 const Section = styled.div`
@@ -17,7 +20,7 @@ const Section = styled.div`
   justify-content: space-between;
 
   @media only screen and (max-width: 768px) {
-    height: 200vh;
+    height: 100vh;
   }
 `;
 

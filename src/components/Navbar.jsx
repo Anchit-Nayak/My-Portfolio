@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Pdf from "../img/Anchit_Resume.pdf";
 
 const Title = styled.h1`
   font-size: 30px;
@@ -53,14 +54,18 @@ const ListItem = styled.li`
   cursor: pointer;
   color: black;
   text-decoration: none;
-  transition: transform .2s;
+  transition: transform 100ms ease;
   &:hover {
    color: grey;
   transform: scale(1.2);
+  
 }
 `;
 
 const Icons = styled.div`
+  width: 100px;
+  border-radius: 10px;
+  text-decoration: none;
   display: flex;
   align-items: center;
   gap: 20px;
@@ -68,6 +73,10 @@ const Icons = styled.div`
 
 
 const Button = styled.button`
+display: flex;
+allign-items: center;
+justify-content: center;
+  font-size: 14px;
   width: 100px;
   padding: 10px;
   background-color: black;
@@ -76,13 +85,13 @@ const Button = styled.button`
   border-radius: 5px;
   cursor: pointer;
   transition: transform .2s;
+  text-decoration: none;
   &:hover {
     background-color: grey;
     color:white;
     transform: scale(1.1);
 }
 `;
-
 const Navbar = () => {
   return (
     <Section>
@@ -93,7 +102,6 @@ const Navbar = () => {
           </Title>
           
           <List>          
-             <ListItem as="a" href="#Hero">Home</ListItem>    
              <ListItem as="a" href="#Who">About</ListItem>
              <ListItem as="a" href="#Skills">Skills</ListItem>
              <ListItem as="a" href="#Works">Projects</ListItem>
@@ -101,7 +109,7 @@ const Navbar = () => {
           </List>
         </Links>
         <Icons>
-          <Button>Resume</Button>
+        <Button as="a" href = {Pdf} target = "_blank">Resume</Button>  
         </Icons>
       </Container>
     </Section>
