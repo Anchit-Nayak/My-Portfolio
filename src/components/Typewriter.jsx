@@ -20,6 +20,7 @@ export const TypeWriter = () => {
           "Azure",
           "Maven",
           "Kubernetes",
+          "DevOps"
 
         ]}
         multiTextDelay={2500}

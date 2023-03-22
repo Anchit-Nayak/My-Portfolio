@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import {SiKubernetes, SiDocker, SiJenkins, SiTerraform, SiMicrosoftazure, SiAnsible, SiAmazonaws, SiReact, SiPrometheus
 ,SiGrafana, SiFlutter, SiApachemaven, SiLinux, SiTailwindcss, SiGnubash, SiFirebase, SiHelm} from "react-icons/si";
 import {FaNode} from "react-icons/fa";
@@ -14,8 +14,13 @@ const Cards = styled.div`
   max-width: 1400px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const Text = styled.h3`

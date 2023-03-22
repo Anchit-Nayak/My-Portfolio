@@ -10,8 +10,16 @@ import { FaLinkedin } from "react-icons/fa";
 const A = styled.a`
 size: 30px;
 margin-right: 30px;
-text-decoration: none;
 
+`;
+const Div = styled.div`
+transition: transform 500ms ease;
+width: 40px;
+  content-decoration: none;
+  margin-right: 30px;
+  &:hover{
+    transform: scale(1.25);
+  }
 `;
 
 const Section = styled.div`
@@ -104,6 +112,9 @@ object-fit: contain;
   margin-left: 320px;
   
 `;
+const Cont = styled.div`
+ display: flex;
+`;
 
 const Hero = () => {
   return (
@@ -117,16 +128,21 @@ const Hero = () => {
             <Subtitle>DevOps Enthusiast</Subtitle>
           </WhatWeDo>
           
-          <div>
+          <Cont>
+            <Div>
             <A href="https://github.com/Anchit-Nayak">
-          <FaGithub size={30}/>
+          <FaGithub color="black" size={40}/>
           </A >
-          <A href="https://www.linkedin.com/in/anchit-nayak/">
-            
-          <FaLinkedin size={30}/>
+          </Div>
+           
+            <Div>
+            <A href="https://www.linkedin.com/in/anchit-nayak/">
+            <FaLinkedin color="black" size={40}/>
         
-          </A>
-          </div> 
+        </A>
+            </Div>   
+          
+          </Cont> 
         </Left>
         <Right>
           <Canvas>

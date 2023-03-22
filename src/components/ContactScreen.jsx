@@ -5,6 +5,7 @@ import {RxTwitterLogo} from "react-icons/rx";
 import {FaLinkedin} from "react-icons/fa"
 import {VscGithub} from "react-icons/vsc";
 import {FiMail} from "react-icons/fi"
+import Pdf from "../img/Anchit_Resume.pdf";
 
 const Container = styled.div`
   border: 2px solid black;
@@ -31,7 +32,7 @@ background-color: lightgray;
   width: 200px;
   height: 200px;
   object-fit: contain;
-  box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.49);
+  // box-shadow: 5px 5px 5px 5px rgba(243, 241, 239);, 1;
   margin-bottom: 15px;
   z-index: 1000;
 
@@ -63,6 +64,8 @@ background-color: white;
 const Desc = styled.p`
 place-items: center;
 padding-top: 5px;
+display: flex;
+justify-content: center;
 width: 300px;
    color: white;
    display: flex;
@@ -94,6 +97,29 @@ const Logo = styled.div`
   }
 `;
 
+
+
+const Button = styled.button`
+display: flex;
+allign-items: center;
+justify-content: center;
+  font-size: 14px;
+  width: 100px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform .2s;
+  text-decoration: none;
+  &:hover {
+    background-color: grey;
+    color:white;
+    transform: scale(1.1);
+`;
+
+
 const ContactScreen = () => {
 
   return <Container>
@@ -109,22 +135,22 @@ const ContactScreen = () => {
           <Text>Contact Me</Text>
           <InputContainer>
           <Logo as="a" href="https://github.com/Anchit-Nayak">
-            <VscGithub size={50}/>
+            <VscGithub color="black"  size={50}/>
           </Logo>
 
           <Logo>
           <RxTwitterLogo size={50}/>
           </Logo>
           <Logo as="a" href="https://www.linkedin.com/in/anchit-nayak/">
-          <FaLinkedin size={50}/>
+          <FaLinkedin  color="black" size={50}/>
           </Logo>
           <Logo as='a' href="mailto: anchitnayak00@gmail.com">
-            <FiMail size={50}/>
+            <FiMail color="black"  size={50}/>
           </Logo>
           
-          
-          
           </InputContainer>
+          <Button as="a" href = {Pdf} target = "_blank">Resume</Button> 
+          
 
       </ContactForm>
     </Form>
