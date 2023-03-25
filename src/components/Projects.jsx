@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import {FaGithub} from 'react-icons/fa';
+import { motion } from "framer-motion";
 
 const Cards = styled.div`
   margin-top: 100px; 
@@ -77,19 +78,6 @@ const Text = styled.h1`
 `;
 const Para = styled.p`
    color: white;
-`;
-const Button = styled.button`
-  width: 100px;
-  padding: 10px;
-  background-color: black;
-  color: white;
-  border: 1px solid white;
-  border-radius: 5px;
-  cursor: pointer;
-  &:hover {
-    background-color: grey;
-    color:white;
-}
 `;
 
 export const Projects = () => {
