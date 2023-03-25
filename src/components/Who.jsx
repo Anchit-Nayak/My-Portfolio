@@ -76,7 +76,7 @@ const Who = () => {
       <Container>
         <Left>
           <motion.div
-          initial={{opacity:0, x:-200}} whileInView={{opacity:1,x:0}} transition={{delay:0.5, duration: 1,bounce:0.3, type: 'spring'}}
+          initial={{opacity:0, y:100}} whileInView={{opacity:1,y:0}} transition={{delay:0.25, duration: 1,bounce:0.3, type: 'spring'}}
           >
           <Img src={me}></Img>
           </motion.div>
@@ -89,7 +89,7 @@ const Who = () => {
             <Subtitle></Subtitle>
           </WhatWeDo>
           <Desc>
-            Second year IT engineering undergrad student at University Of Mumbai. 
+            Second year IT engineering undergrad at University Of Mumbai. 
           Believing in the data-driven culture,an aspiring Cloud Architect and Developer skilled in Microsoft Azure with Exceptional knowledge of DevOps(different DevOps tools like Docker, Kubernetes, Jenkins, Terraform and Prometheus ). 
 I believe in continuous learning & eager to experiment with new technologies.
 Having an adaptive personality along with the motivation to excel in the field of DevOps and SRE.
