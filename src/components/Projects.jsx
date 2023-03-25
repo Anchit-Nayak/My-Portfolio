@@ -84,10 +84,6 @@ const Text = styled.h1`
 const Para = styled.p`
    color: white;
 `;
-const Sp = styled.div`
-   margin-right: 5px;
-`;
-
 
 export const Projects = () => {
   var list = [

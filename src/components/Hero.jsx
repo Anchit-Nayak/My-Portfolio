@@ -6,7 +6,7 @@ import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import { TypeWriter } from "./Typewriter";
 import {FaGithub} from 'react-icons/fa';
 import { FaLinkedin } from "react-icons/fa";
-import { delay, motion } from "framer-motion";
+import {motion } from "framer-motion";
 
 const A = styled.a`
 size: 30px;
@@ -83,16 +83,6 @@ const WhatWeDo = styled.div`
 const Subtitle = styled.h2`
   color: 	#44475a;
 `;
-
-const Desc = styled.p`
-  font-size: 24px;
-  color: black;
-  @media only screen and (max-width: 768px) {
-    padding: 20px;
-    text-align: center;
-  }
-`;
-
 
 const Right = styled.div`
   flex: 3;
