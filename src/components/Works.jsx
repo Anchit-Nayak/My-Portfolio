@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { motion } from "framer-motion";
 import { Projects } from "./Projects";
 
 const Cont = styled.div`
@@ -24,13 +25,6 @@ const Section = styled.div`
   }
 `;
 
-const Center = styled.div`
-  display: flex;
-  allign-items: center;
-  flex-direction: column; 
-`;
-
-
 const Container = styled.div`
   height: 100%;
   scroll-snap-align: center;
@@ -48,19 +42,6 @@ const Container = styled.div`
   }
 `;
 
-const Left = styled.div`
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-
-  @media only screen and (max-width: 768px) {
-    flex: 1;
-    align-items: center;
-  }
-`;
-
 const Title = styled.h1`
   font-size: 74px;
   color: #161616;
@@ -68,14 +49,6 @@ const Title = styled.h1`
 
   @media only screen and (max-width: 768px) {
     font-size: 60px;
-  }
-`;
-const Right = styled.div`
-  flex: 3;
-  position: relative;
-  @media only screen and (max-width: 768px) {
-    flex: 1;
-    width: 100%;
   }
 `;
 
@@ -88,7 +61,10 @@ const Works = () => {
           <Title>My Projects</Title>
           </Cont>
           <Cont>
-          <Projects/>
+            <motion.div initial={{opacity:0, x:200}} whileInView={{opacity:1, x:0}} transition={{delay:0.25, bounce:0.3, type: 'spring'}} >
+            <Projects/>
+            </motion.div>
+          
           </Cont>
           
           

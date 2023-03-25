@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import me from "../../public/img/me.png"
-
+import { delay, motion } from "framer-motion";
 
 const Section = styled.div`
   height: 100vh;
@@ -20,9 +20,8 @@ const Container = styled.div`
 
 const Left = styled.div`
   flex: 1;
-
+  
   @media only screen and (max-width: 768px) {
-    display: none;
   }
 `;
 
@@ -66,7 +65,7 @@ const Img = styled.img`
   width: 500px;
   height: 600px;
   object-fit: contain;
-  margin-top: 150px;
+  margin-top: 100px;
   margin-left: 50px;
 
 `;
@@ -76,7 +75,11 @@ const Who = () => {
     <Section id="Who">
       <Container>
         <Left>
+          <motion.div
+          initial={{opacity:0, x:-200}} whileInView={{opacity:1,x:0}} transition={{delay:0.5, duration: 1,bounce:0.3, type: 'spring'}}
+          >
           <Img src={me}></Img>
+          </motion.div>
         </Left>
 
         <Right>

@@ -2,12 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import ContactScreen from "./ContactScreen";
 
-const Center = styled.div`
-  display: flex;
-  justify-content: center;
-  allign-items: center;
-  
-`;
+import { motion } from "framer-motion";
+
 
 const Cont = styled.div`
   display: flex;
@@ -46,18 +42,6 @@ const Container = styled.div`
   }
 `;
 
-const Left = styled.div`
-  flex: 2;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 20px;
-
-  @media only screen and (max-width: 768px) {
-    flex: 1;
-    align-items: center;
-  }
-`;
 
 const Title = styled.h1`
   font-size: 74px;
@@ -68,27 +52,6 @@ const Title = styled.h1`
   }
 `;
 
-const Button = styled.button`
-  background-color: #da4ea2;
-  color: white;
-  font-weight: 500;
-  width: 100px;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-`;
-
-const Right = styled.div`
-  flex: 3;
-  position: relative;
-  @media only screen and (max-width: 768px) {
-    flex: 1;
-    width: 100%;
-  }
-`;
-
-
 const Contact = () => {
   return (
     <Section id="Contact">
@@ -96,9 +59,11 @@ const Contact = () => {
           <Cont>
           <Title>Let's Get In Touch</Title>
           </Cont>
+          <motion.div initial={{opacity:0, y:100}} whileInView={{opacity:1,y:0}} transition={{delay:0.25, duration: 1}}>
           <Cont>
           <ContactScreen/>
           </Cont>
+          </motion.div>
       </Container>
     </Section>
   );

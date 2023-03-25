@@ -3,7 +3,6 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Hero from "./components/Hero";
 import { Skills } from "./components/Skills";
-import { Splash } from "./components/Splash";
 import Who from "./components/Who";
 import Works from "./components/Works";
 
@@ -14,6 +13,7 @@ const Container = styled.div`
   scrollbar-width: none;
   color: black;
   background: #ffffff;
+  text-rendering: optimizelegibility;
   &::-webkit-scrollbar{
     display: none;
   }

@@ -6,6 +6,7 @@ import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 import { TypeWriter } from "./Typewriter";
 import {FaGithub} from 'react-icons/fa';
 import { FaLinkedin } from "react-icons/fa";
+import { delay, motion } from "framer-motion";
 
 const A = styled.a`
 size: 30px;
@@ -23,6 +24,7 @@ width: 40px;
 `;
 
 const Section = styled.div`
+  margin-bottom: 100px;
   height: 100vh;
   scroll-snap-align: center;
   display: flex;
@@ -122,10 +124,14 @@ const Hero = () => {
       <Navbar />
       <Container>
         <Left>
+          <motion.div
+          initial={{opacity:0, y:24}} whileInView={{opacity:1, y:0}} transition={{delay:0.5}}
+          >
           <Title>Hi There,</Title>
-          <Title>I am Anchit Nayak</Title>
+          <Title>I am <motion.span>Anchit Nayak</motion.span></Title>
+          </motion.div>
           <WhatWeDo>
-            <Subtitle>DevOps Enthusiast</Subtitle>
+            <Subtitle><motion.span  initial={{opacity:0, y:24}} whileInView={{opacity:1, y:0}} transition={{delay:0.7}}>DevOps Enthusiast</motion.span></Subtitle>
           </WhatWeDo>
           
           <Cont>

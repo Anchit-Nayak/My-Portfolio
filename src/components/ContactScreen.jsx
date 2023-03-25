@@ -6,7 +6,7 @@ import {FaLinkedin} from "react-icons/fa"
 import {VscGithub} from "react-icons/vsc";
 import {FiMail} from "react-icons/fi"
 import Pdf from "../img/Anchit_Resume.pdf";
-
+import { motion } from 'framer-motion';
 const Container = styled.div`
   border: 2px solid black;
   width: 100%;
@@ -126,8 +126,14 @@ const ContactScreen = () => {
     <Form>
       <ContactInfo>
          <Img src={me}></Img>
+         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.5}}>
         <Title>Anchit Nayak</Title>
+        </motion.div>
+
+        <motion.div initial={{opacity:0, y: 100}} whileInView={{opacity:1, y:0}} transition={{delay:0.4}}>
         <Desc>Feel free to reach out to me at any time,</Desc> <Desc>I am always interested in new stuff!</Desc>
+        </motion.div>
+        
 
       </ContactInfo>
       <ContactForm>
