@@ -1,14 +1,14 @@
 import React from 'react'
 import styled from 'styled-components';
 import {FaGithub} from 'react-icons/fa';
-import { motion } from "framer-motion";
+
 
 const Cards = styled.div`
   margin-top: 100px; 
   height: 10vh;
   max-width: 1400px;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 50px;
   grid-row-gap: 80px;
   allign-items: center;
@@ -21,7 +21,7 @@ const Cards = styled.div`
 `;
 const Content = styled.div`
   padding: 1.5rem;
-  transform: translateY(24%);
+  transform: translateY(23%);
   transition: transform 500ms ease;
   &:hover{
     background: linear-gradient(hsl(0 0% 0% / 0), hsl(0 0% 0% / 1));
@@ -36,13 +36,19 @@ const TextContainer = styled.div`
 const Card = styled.div`
 border: solid 2px black;
 border-radius: 10px;
-height: 350px;
+height: 360px;
 width: 420px;
 overflow: hidden;
 color: black;
-background-image: url(../../public/img/img.jpg);
+background-image: url(../../public/img/portfolio.png);
 background-size: cover;
 transition: transform 500ms ease;
+@media only screen and (max-width: 768px) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 &:hover{
   transform: scale(1.05);
     box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.49);
@@ -52,11 +58,11 @@ transition: transform 500ms ease;
 const Card1 = styled.div`
 border: solid 2px black;
 border-radius: 10px;
-height: 350px;
+height: 360px;
 width: 420px;
 overflow: hidden;
 color: black;
-background-image: url(https://miro.medium.com/v2/resize:fit:640/format:webp/1*HPkct3B9kU5RtscdT9I50w.png);
+background-image: url(../../public/img/Scribbble.png);
 background-size: cover;
 transition: transform 500ms ease;
 &:hover{
@@ -66,24 +72,26 @@ transition: transform 500ms ease;
 }
 `;
 const Space = styled.div`
-   padding-top: 2px;
-   padding-bottom: 2px;
+   padding-bottom: 5px;
+   text-decoration: none;
+   gap: 5px;
 `;
 
 const Text = styled.h1`
    color: inherit;
    margin-top: 12rem;
-
-   
 `;
 const Para = styled.p`
    color: white;
 `;
+const Sp = styled.div`
+   margin-right: 5px;
+`;
+
 
 export const Projects = () => {
   var list = [
     { 'no': '1','image': '../../public/img/img.jpg', 'title': "Hello" , 'desc' : "My name is Anchit"},
-    { 'no': '2','image': '../../public/img/img.png', 'title': "Hello" , 'desc' : "My name is Anchit"},
     
   ]
   return (
@@ -94,16 +102,18 @@ export const Projects = () => {
               <Content>
                 <TextContainer>
                 <Text>
-                Pipeline using Jenkins
+                Portfolio Website
                  </Text>
                 </TextContainer>
               <Space>
               <Para>
-                amfanfanfnafn afimanfana  annai afnab ubagwm wnwngbw gwjnwb w ubwubw ngwhg w fwnuw gwngwg wnwuw 
+                Built using <strong>React</strong>, <strong>Styled Components</strong> and 3JS.
+                The CI/CD Pipeline for it using <strong>Jenkins</strong>, <strong>AWS EC2</strong> and <strong>Docker</strong> on 
+                <strong> AWS</strong> will be available soon. 
               </Para>
               </Space>
-              <Space>
-              <FaGithub size={30}/>
+              <Space  as="a" href="https://github.com/Anchit-Nayak/My-Portfolio">
+              <FaGithub size={30} color="white"/>
               </Space>
               </Content>
               
@@ -115,15 +125,16 @@ export const Projects = () => {
               <Content>
                 <TextContainer>
                 <Text>
-                Pipeline using Jenkins
+                Scribbble- Blog Website
                  </Text>
                 </TextContainer>
               <Space>
               <Para>
-                amfanfanfnafn afimanfana  annai afnab ubagwm wnwngbw gwjnwb w ubwubw ngwhg w fwnuw gwngwg wnwuw 
+                Created using <strong>ReactJS</strong>, <strong>NodeJS</strong>, <strong>MySQL</strong>.
+                Underprogress.
               </Para>
               </Space>
-              <Space>
+              <Space >
               <FaGithub size={30}/>
               </Space>
               </Content>
