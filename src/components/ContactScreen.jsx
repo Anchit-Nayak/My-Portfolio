@@ -162,8 +162,8 @@ const ContactScreen = () => {
             <VscGithub color="black"  size={50}/>
           </Logo>
 
-          <Logo>
-          <RxTwitterLogo size={50}/>
+          <Logo as="a" href="https://twitter.com/AnchitNayak">
+          <RxTwitterLogo color="black" size={50}/>
           </Logo>
           <Logo as="a" href="https://www.linkedin.com/in/anchit-nayak/">
           <FaLinkedin  color="black" size={50}/>

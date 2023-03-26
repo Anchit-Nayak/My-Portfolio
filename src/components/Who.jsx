@@ -88,7 +88,7 @@ const Who = () => {
           <Title>About Me</Title>
           <Desc>
             Second year IT engineering undergrad at University Of Mumbai. 
-          Believing in the data-driven culture,an aspiring Cloud Architect and Developer skilled in Microsoft Azure with Exceptional knowledge of DevOps(different DevOps tools like Docker, Kubernetes, Jenkins, Terraform and Prometheus ). 
+          Believing in the data-driven culture,an aspiring Cloud Architect and Developer skilled in Microsoft Azure with Exceptional knowledge of DevOps(different DevOps tools like Docker, Kubernetes, Jenkins, Terraform and Ansible). 
 I believe in continuous learning & eager to experiment with new technologies.
 Having an adaptive personality along with the motivation to excel in the field of DevOps and SRE.
           </Desc>

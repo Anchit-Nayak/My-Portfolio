@@ -37,7 +37,7 @@ const TextContainer = styled.div`
 const Card = styled.div`
 border: solid 2px black;
 border-radius: 10px;
-height: 360px;
+height: 350px;
 width: 420px;
 overflow: hidden;
 color: black;
@@ -103,8 +103,8 @@ export const Projects = () => {
               <Space>
               <Para>
                 Built using <strong>React</strong>, <strong>Styled Components</strong> and 3JS.
-                The CI/CD Pipeline for it using <strong>Jenkins</strong>, <strong>AWS EC2</strong> and <strong>Docker</strong> on 
-                <strong> AWS</strong> will be available soon. 
+                TDeployed using <strong>Docker</strong>, <strong></strong>and <strong>Docker</strong> on  
+                <strong> NGINX</strong>. 
               </Para>
               </Space>
               <Space  as="a" href="https://github.com/Anchit-Nayak/My-Portfolio">
