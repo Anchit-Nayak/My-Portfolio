@@ -13,10 +13,11 @@ const Cards = styled.div`
   grid-row-gap: 80px;
   allign-items: center;
   @media only screen and (max-width: 768px) {
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    height: 90vh;
+    
   }
 `;
 const Content = styled.div`
@@ -46,8 +47,6 @@ transition: transform 500ms ease;
 @media only screen and (max-width: 768px) {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 &:hover{
   transform: scale(1.05);

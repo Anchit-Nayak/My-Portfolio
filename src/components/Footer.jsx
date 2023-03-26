@@ -27,6 +27,7 @@ const Section = styled.div`
   background-color: #161616;
 
   @media only screen and (max-width: 768px) {
+    margin-top: 200px;
     width: 100%;
   }
 `;
@@ -55,6 +56,9 @@ const Icons = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
+  @media only screen and (max-width: 768px) {
+    width: 120px; 
+  }
 `;
 const Para= styled.p`
   color: lightgray;

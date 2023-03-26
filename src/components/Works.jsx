@@ -22,6 +22,7 @@ const Section = styled.div`
 
   @media only screen and (max-width: 768px) {
     height: 100vh;
+    margin-top: 50px;
   }
 `;
 
@@ -39,6 +40,13 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+`;
+const Dis = styled.div`
+   display: none;
+   @media only screen and (max-width: 768px) {
+    padding-top: 3px;
+    display: block;
   }
 `;
 
@@ -60,8 +68,9 @@ const Works = () => {
           <Cont>
           <Title>My Projects</Title>
           </Cont>
+          <Dis><h3>Tap on the project to know more</h3></Dis>
           <Cont>
-            <motion.div initial={{opacity:0, x:200}} whileInView={{opacity:1, x:0}} transition={{delay:0.25, bounce:0.3, type: 'spring'}} >
+            <motion.div initial={{opacity:0, x:300}} whileInView={{opacity:1, x:0}} transition={{delay:0.25, bounce:0.3, type: 'spring'}} >
             <Projects/>
             </motion.div>
           

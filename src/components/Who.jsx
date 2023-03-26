@@ -8,6 +8,9 @@ const Section = styled.div`
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
+  @media only screen and (max-width: 768px) {
+    height:80vh;
+  }
 `;
 
 const Container = styled.div`
@@ -16,12 +19,20 @@ const Container = styled.div`
   width: 1400px;
   display: flex;
   justify-content: space-between;
+  @media only screen and (max-width: 768px) {
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
 `;
 
 const Left = styled.div`
   flex: 1;
   
   @media only screen and (max-width: 768px) {
+    flex: 1;
+    align-items: center;
   }
 `;
 
@@ -42,19 +53,10 @@ const Right = styled.div`
   gap: 20px;
 
   @media only screen and (max-width: 768px) {
-    align-items: center;
-    text-align: center;
+    margin-top: 50px;
+    flex: 1;
+    width: 100%;
   }
-`;
-
-const WhatWeDo = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 10px;
-`;
-
-const Subtitle = styled.h2`
-  color: #da4ea2;
 `;
 
 const Desc = styled.p`
@@ -84,10 +86,6 @@ const Who = () => {
 
         <Right>
           <Title>About Me</Title>
-          <WhatWeDo>
-            
-            <Subtitle></Subtitle>
-          </WhatWeDo>
           <Desc>
             Second year IT engineering undergrad at University Of Mumbai. 
           Believing in the data-driven culture,an aspiring Cloud Architect and Developer skilled in Microsoft Azure with Exceptional knowledge of DevOps(different DevOps tools like Docker, Kubernetes, Jenkins, Terraform and Prometheus ). 

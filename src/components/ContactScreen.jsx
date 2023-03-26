@@ -17,6 +17,12 @@ const Container = styled.div`
   border-radius: 10px;
   box-shadow: 0 0 20px 1px rgba(0,0,0,0.1);
   z-index: 1000;
+  @media only screen and (max-width: 768px) {
+    width:100%;
+    height: 700px;
+    margin-bottom: 110px;
+    
+  }
   
 `;
 const Text = styled.h2`
@@ -46,8 +52,11 @@ const Form = styled.div`
   height: 100%;
   display: grid;
   grid-template-columns: repeat(2 , 1fr);
-  
-
+  @media only screen and (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+  }
 `;
 
 const ContactForm = styled.div`
@@ -58,6 +67,11 @@ background-color: white;
    flex-direction: column;
    place-items: center;
    justify-content: center;
+   @media only screen and (max-width: 768px) {
+    height: 100%;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    overflow: hidden;
 
   }
 `;
@@ -79,6 +93,10 @@ const ContactInfo = styled.div`
    flex-direction: column;
    justify-content: center;
    allign-items: center;
+   @media only screen and (max-width: 768px) {
+    padding-top: 50px;
+    padding-bottom: 30px;
+  }
 `;
 const InputContainer = styled.div`
   display: flex;

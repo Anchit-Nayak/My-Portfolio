@@ -102,6 +102,10 @@ object-fit: contain;
   right: 0;
   margin-top: 400px;
   margin-left: 320px;
+  @media only screen and (max-width: 768px) {
+    display: none;
+
+  }
   
 `;
 const Cont = styled.div`
