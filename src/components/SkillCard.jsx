@@ -1,7 +1,7 @@
 import React from 'react'
 import {SiKubernetes, SiDocker, SiJenkins, SiTerraform, SiMicrosoftazure, SiAnsible, SiAmazonaws, SiReact, SiPrometheus
-,SiGrafana, SiFlutter, SiApachemaven, SiLinux, SiTailwindcss, SiGnubash, SiFirebase, SiHelm} from "react-icons/si";
-import {FaNode} from "react-icons/fa";
+,SiGrafana, SiApachemaven, SiLinux, SiGnubash, SiHelm, SiPython, SiFluentd} from "react-icons/si";
+import {FaNode, FaGitAlt} from "react-icons/fa";
 import styled from 'styled-components';
 
 const Container= styled.div`
@@ -101,8 +101,8 @@ export const SkillCard = () => {
             'topic': "React"
         },
         {'no': '11',
-            'icon': <SiFlutter size={40}/>,
-            'topic': "Flutter"
+            'icon': <SiPython size={40}/>,
+            'topic': "Python"
         },
         {'no': '12',
             'icon': <SiApachemaven size={40}/>,
@@ -113,8 +113,8 @@ export const SkillCard = () => {
             'topic': "Linux"
         },
         {'no': '14',
-            'icon': <SiFirebase size={40}/>,
-            'topic': "Firebase"
+            'icon': <SiFluentd size={40}/>,
+            'topic': "Fluentd"
         },
         {'no': '15',
             'icon': <SiGnubash size={40}/>,
@@ -125,8 +125,8 @@ export const SkillCard = () => {
             'topic': "Helm"
         },
         {'no': '17',
-            'icon': <SiTailwindcss size={40}/>,
-            'topic': "Tailwind"
+            'icon': <FaGitAlt size={40}/>,
+            'topic': "Git"
         },
         {'no': '18',
             'icon': <FaNode size={40}/>,
