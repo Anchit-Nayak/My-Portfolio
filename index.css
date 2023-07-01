@@ -1,0 +1,39 @@
+#preloader{
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    z-index: 100;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.text{
+    color: transparent;
+}
+.text::before{
+    content: attr(data-fill-text);
+    position: absolute;
+    width: 0;
+    height: 100%;
+    color: white;
+    overflow: hidden;
+    animation: animate 3.5s linear ;
+}
+@keyframes animate{
+   0%{width: 0;
+
+    }
+   100%{width: 100%;
+ 
+};
+}
+
+
+
+
+        

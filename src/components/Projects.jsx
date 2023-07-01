@@ -8,21 +8,23 @@ const Cards = styled.div`
   height: 10vh;
   max-width: 1400px;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   grid-column-gap: 50px;
   grid-row-gap: 80px;
   allign-items: center;
   @media only screen and (max-width: 768px) {
     margin-top: 50px;
+    margin-left: 10px;
     display: flex;
     flex-direction: column;
-    height: 90vh;
+    height: 150vh;
+    width: 90%;
     
   }
 `;
 const Content = styled.div`
   padding: 1.5rem;
-  transform: translateY(23%);
+  transform: translateY(28%);
   transition: transform 500ms ease;
   &:hover{
     background: linear-gradient(hsl(0 0% 0% / 0), hsl(0 0% 0% / 1));
@@ -37,14 +39,16 @@ const TextContainer = styled.div`
 const Card = styled.div`
 border: solid 2px black;
 border-radius: 10px;
-height: 350px;
-width: 420px;
+height: 37vh;
+width: 25vw;
 overflow: hidden;
 color: black;
 background-image: url(../../public/img/portfolio.png);
 background-size: cover;
 transition: transform 500ms ease;
 @media only screen and (max-width: 768px) {
+  height: 42vh;
+  width: 85vw;
   display: flex;
   flex-direction: column;
 }
@@ -57,17 +61,22 @@ transition: transform 500ms ease;
 const Card1 = styled.div`
 border: solid 2px black;
 border-radius: 10px;
-height: 360px;
-width: 420px;
+height: 37vh;
+width: 25vw;
 overflow: hidden;
 color: black;
-background-image: url(../../public/img/Scribbble.png);
+background-image: url(../../public/img/project1.jpg);
 background-size: cover;
 transition: transform 500ms ease;
+@media only screen and (max-width: 768px) {
+  height: 42vh;
+  width: 85vw;
+  display: flex;
+  flex-direction: column;
+}
 &:hover{
   transform: scale(1.05);
     box-shadow: 10px 10px 53px 0px rgba(0,0,0,0.49);
-    color:white;
 }
 `;
 const Space = styled.div`
@@ -77,7 +86,9 @@ const Space = styled.div`
 `;
 
 const Text = styled.h1`
+   font-size: 25px;
    color: inherit;
+   font-weight:900 ;
    margin-top: 12rem;
 `;
 const Para = styled.p`
@@ -85,15 +96,29 @@ const Para = styled.p`
 `;
 
 export const Projects = () => {
-  var list = [
-    { 'no': '1','image': '../../public/img/img.jpg', 'title': "Hello" , 'desc' : "My name is Anchit"},
-    
-  ]
+  
   return (
     <Cards>
-        {
-          list.map((card, i) =>(
-            <Card key={i}>
+      <Card1>
+              <Content>
+                <TextContainer>
+                <Text>
+                Automated Deployments
+                 </Text>
+                </TextContainer>
+              <Space>
+              <Para>
+              Implemented a CI/CD pipeline with <strong>Jenkins</strong>, deploying a simple <strong>Node.js</strong> to-do app on <strong>AWS EC2 </strong>instances using <strong>Docker</strong> containers.
+              </Para>
+              </Space>
+              <Space >
+              <FaGithub size={30}/>
+              </Space>
+              </Content>
+            </Card1> 
+        
+          
+            <Card >
               <Content>
                 <TextContainer>
                 <Text>
@@ -102,9 +127,7 @@ export const Projects = () => {
                 </TextContainer>
               <Space>
               <Para>
-                Built using <strong>React</strong>, <strong>Styled Components</strong> and 3JS.
-                TDeployed using <strong>Docker</strong>, <strong></strong>and <strong>Docker</strong> on  
-                <strong> NGINX</strong>. 
+              Built and Deployed my portfolio website using <strong>ReactJS</strong> with <strong>Styled Components</strong> and 3JS on <strong>AWS S3</strong> using <strong>GitHub Actions</strong>. (later hosted on github) 
               </Para>
               </Space>
               <Space  as="a" href="https://github.com/Anchit-Nayak/My-Portfolio">
@@ -113,27 +136,26 @@ export const Projects = () => {
               </Content>
               
             </Card>
-
- 
-          ))}
-          <Card1>
-              <Content>
+            <Card>
+            <Content>
                 <TextContainer>
                 <Text>
-                Scribbble- Blog Website
+                Automated Deployments
                  </Text>
                 </TextContainer>
               <Space>
               <Para>
-                Created using <strong>ReactJS</strong>, <strong>NodeJS</strong>, <strong>MySQL</strong>.
-                Underprogress.
+              Implemented a CI/CD pipeline with <strong>Jenkins</strong>, deploying a simple <strong>Node.js</strong> to-do app on <strong>AWS EC2 </strong>instances using <strong>Docker</strong> containers.
               </Para>
               </Space>
               <Space >
               <FaGithub size={30}/>
               </Space>
               </Content>
-            </Card1> 
+
+            </Card>
+
+          
         
     </Cards>
   )

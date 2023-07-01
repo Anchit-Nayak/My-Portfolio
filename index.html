@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,6 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="index.css">
     <style>
       * {
         padding: 0;
@@ -18,7 +20,17 @@
     <title>Anchit Nayak</title>
   </head>
   <body>
+    <div id="preloader">
+      <div >
+      <h2 class="text" data-fill-text="AN.">AN.</h2>
+    </div></div>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      var loader = document.getElementById("preloader");
+      setTimeout(function(){
+        loader.style.display="none";
+      }, 2900)
+    </script>
   </body>
 </html>

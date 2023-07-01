@@ -1,27 +1,27 @@
 import React from 'react'
 import {SiKubernetes, SiDocker, SiJenkins, SiTerraform, SiMicrosoftazure, SiAnsible, SiAmazonaws, SiReact, SiPrometheus
 ,SiGrafana, SiApachemaven, SiLinux, SiGnubash, SiHelm, SiPython, SiFluentd} from "react-icons/si";
-import {FaNode, FaGitAlt} from "react-icons/fa";
+import {FaTools} from "react-icons/fa";
 import styled from 'styled-components';
 
 const Container= styled.div`
-  margin-left: 100px;
+width: 80vw;
+display: flex;
+allign-items: center;
+justify-content: center;
 `;
 
 const Cards = styled.div`
   margin-top: 100px; 
-  height: 70vh;
-  max-width: 1400px;
+  height: 30vh;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 7fr);
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   @media only screen and (max-width: 768px) {
+    margin-top: 50px;
     display: grid;
   grid-template-columns: repeat(1, 1fr);
-  position: relative;
-  right: 45px;
-  
   }
 `;
 
@@ -44,6 +44,9 @@ flex-direction: row;
 justify-content: center;
 allign-items: center;
 color: black;
+@media only screen and (max-width: 900px) {
+    margin-bottom: 10px;
+  }
 `;
 const Icon = styled.div`
 display:flex;
@@ -78,60 +81,25 @@ export const SkillCard = () => {
         },
         {   'no': '5', 
             'icon': <SiMicrosoftazure size={40}/>,
-            'topic': "Azure"
+            'topic': "Cloud Computing"
         },
         {'no': '6',
             'icon': <SiAnsible size={40}/>,
             'topic': "Ansible"
         },
         {'no': '7',
-            'icon': <SiAmazonaws size={40}/>,
-            'topic': "AWS"
+            'icon': <FaTools size={40}/>,
+            'topic': "Automation"
         },
         {'no': '8',
-            'icon': <SiPrometheus size={40}/>,
-            'topic': "Prometheus"
+            'icon': <SiReact size={40}/>,
+            'topic': "Web Development"
         },
         {'no': '9',
-            'icon': <SiGrafana size={40}/>,
-            'topic': "Grafana"
-        },
-        {'no': '10',
-            'icon': <SiReact size={40}/>,
-            'topic': "React"
-        },
-        {'no': '11',
-            'icon': <SiPython size={40}/>,
-            'topic': "Python"
-        },
-        {'no': '12',
-            'icon': <SiApachemaven size={40}/>,
-            'topic': "Maven"
-        },
-        {'no': '13',
             'icon': <SiLinux size={40}/>,
             'topic': "Linux"
         },
-        {'no': '14',
-            'icon': <SiFluentd size={40}/>,
-            'topic': "Fluentd"
-        },
-        {'no': '15',
-            'icon': <SiGnubash size={40}/>,
-            'topic': "Bash"
-        },
-        {'no': '16',
-            'icon': <SiHelm size={40}/>,
-            'topic': "Helm"
-        },
-        {'no': '17',
-            'icon': <FaGitAlt size={40}/>,
-            'topic': "Git"
-        },
-        {'no': '18',
-            'icon': <FaNode size={40}/>,
-            'topic': "NodeJS"
-        },
+        
 
     ]
   return (

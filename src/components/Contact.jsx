@@ -9,6 +9,10 @@ const Cont = styled.div`
   display: flex;
   justify-content:center;
   margin-top: 50px;
+  @media only screen and (max-width: 768px) {
+    width: 100%
+    height: 100%;
+  }
 `;
 
 const Section = styled.div`
@@ -49,7 +53,7 @@ const Title = styled.h1`
   color: #161616;
 
   @media only screen and (max-width: 768px) {
-    font-size: 60px;
+    font-size: 40px;
   }
 `;
 
@@ -60,7 +64,7 @@ const Contact = () => {
           <Cont>
           <Title>Let's Get In Touch</Title>
           </Cont>
-          <motion.div initial={{opacity:0, y:100}} whileInView={{opacity:1,y:0}} transition={{delay:0.25, duration: 1}}>
+          <motion.div initial={{opacity:0, y:100}} whileInView={{opacity:1,y:0}} transition={{delay:0.25}}>
           <Cont>
           <ContactScreen/>
           </Cont>

@@ -5,7 +5,6 @@ import Pdf from "../img/Anchit_Resume.pdf";
 const Title = styled.h1`
   font-size: 30px;
   color: black;
-
   @media only screen and (max-width: 768px) {
     text-align: center;
   }
@@ -14,14 +13,14 @@ const Title = styled.h1`
 const Section = styled.div`
   display: flex;
   justify-content: center;
-
+  width: 100vw;
   @media only screen and (max-width: 768px) {
     width: 100%;
   }
 `;
 
 const Container = styled.div`
-  width: 1400px;
+  width: 80vw;
   display: flex;
   justify-content: space-between;
   align-items: center;

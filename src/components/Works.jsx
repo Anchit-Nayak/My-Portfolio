@@ -6,13 +6,12 @@ import { Projects } from "./Projects";
 const Cont = styled.div`
   display: flex;
   justify-content:center;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     align-items: center;
   }
 `;
 
 const Section = styled.div`
-  margin-top: 60px; 
   height: 70vh;
   scroll-snap-align: center;
   display: flex;
@@ -20,9 +19,8 @@ const Section = styled.div`
   align-items: center;
   justify-content: space-between;
 
-  @media only screen and (max-width: 768px) {
-    height: 100vh;
-    margin-top: 50px;
+  @media only screen and (max-width: 900px) {
+    height: 120vh;
   }
 `;
 
@@ -35,7 +33,7 @@ const Container = styled.div`
   allign-items: center;
   flex-direction: column; 
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 900px) {
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -44,7 +42,7 @@ const Container = styled.div`
 `;
 const Dis = styled.div`
    display: none;
-   @media only screen and (max-width: 768px) {
+   @media only screen and (max-width: 900px) {
     padding-top: 3px;
     display: block;
   }
@@ -55,8 +53,8 @@ const Title = styled.h1`
   color: #161616;
   text-allign: center;
 
-  @media only screen and (max-width: 768px) {
-    font-size: 60px;
+  @media only screen and (max-width: 900px) {
+    font-size: 40px;
   }
 `;
 
@@ -68,7 +66,7 @@ const Works = () => {
           <Cont>
           <Title>My Projects</Title>
           </Cont>
-          <Dis><h3>Tap on the project to know more</h3></Dis>
+          <Dis><h3>(Tap on the project to know more)</h3></Dis>
           <Cont>
             <motion.div initial={{opacity:0, x:300}} whileInView={{opacity:1, x:0}} transition={{delay:0.25, bounce:0.3, type: 'spring'}} >
             <Projects/>

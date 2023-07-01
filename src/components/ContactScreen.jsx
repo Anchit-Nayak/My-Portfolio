@@ -8,20 +8,19 @@ import {FiMail} from "react-icons/fi"
 import Pdf from "../img/Anchit_Resume.pdf";
 import { motion } from 'framer-motion';
 const Container = styled.div`
+  width: 75vw;
+  height: 50vh;
   border: 2px solid black;
-  width: 100%;
   max-width: 1020px;
-  height: 550px;
   background-color: #161616;
   overflow:hidden;
   border-radius: 10px;
   box-shadow: 0 0 20px 1px rgba(0,0,0,0.1);
   z-index: 1000;
-  @media only screen and (max-width: 768px) {
-    width:100%;
-    height: 700px;
-    margin-bottom: 110px;
-    
+  @media only screen and (max-width: 700px) {
+    margin-bottom: 100px;
+    width: 95vw;
+    height: 75vh;   
   }
   
 `;
@@ -55,7 +54,7 @@ const Form = styled.div`
   @media only screen and (max-width: 768px) {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    width: 430px;
   }
 `;
 
@@ -70,9 +69,9 @@ background-color: white;
    @media only screen and (max-width: 768px) {
     height: 100%;
     padding-top: 50px;
-    padding-bottom: 30px;
+    padding-bottom: 90px;
     overflow: hidden;
-
+    padding-right: 25px;
   }
 `;
 const Desc = styled.p`
@@ -94,8 +93,9 @@ const ContactInfo = styled.div`
    justify-content: center;
    allign-items: center;
    @media only screen and (max-width: 768px) {
-    padding-top: 50px;
+    padding-top: 40px;
     padding-bottom: 30px;
+    padding-right: 30px;
   }
 `;
 const InputContainer = styled.div`
@@ -144,11 +144,11 @@ const ContactScreen = () => {
     <Form>
       <ContactInfo>
          <Img src={me}></Img>
-         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.5}}>
+         <motion.div initial={{opacity:0}} whileInView={{opacity:1}} transition={{delay:0.2}}>
         <Title>Anchit Nayak</Title>
         </motion.div>
 
-        <motion.div initial={{opacity:0, y: 100}} whileInView={{opacity:1, y:0}} transition={{delay:0.4}}>
+        <motion.div initial={{opacity:0, y: 100}} whileInView={{opacity:1, y:0}} transition={{delay:0.2}}>
         <Desc>Feel free to reach out to me at any time,</Desc> <Desc>I am always interested in new stuff!</Desc>
         </motion.div>
         

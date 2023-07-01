@@ -10,7 +10,7 @@ export const TypeWriter = () => {
           fontWeight: 650,
           fontSize: '2.8em',
         }}
-        startDelay={1500}
+        startDelay={2800}
         cursorColor="white"
         multiText={[
           "Docker",

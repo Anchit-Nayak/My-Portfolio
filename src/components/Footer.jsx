@@ -8,7 +8,7 @@ const Title = styled.h1`
   font-weight: 900;
   text-decoration: none;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 700px) {
     text-align: center;
   }
 `;
@@ -21,27 +21,30 @@ const Bold= styled.b`
 
 const Section = styled.div`
   margin-top: 100px;
+  width: 100vw;
   display: flex;
   justify-content: center;
   padding:15px;
   background-color: #161616;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 700px) {
     margin-top: 200px;
+    margin-bottom: 0px;
     width: 100%;
   }
 `;
 
 const Container = styled.div`
-  width: 1400px;
+  width: 80vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 0px;
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 700px) {
     width: 100%;
     padding: 10px;
+    margin-bottom: 0px;
   }
 `;
 
@@ -56,7 +59,7 @@ const Icons = styled.div`
   display: flex;
   align-items: center;
   gap: 20px;
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 700px) {
     width: 120px; 
   }
 `;
